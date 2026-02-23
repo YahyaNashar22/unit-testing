@@ -18,7 +18,17 @@ describe("max", () => {
         expect(result).toBe(2);
 
         // ? can be simplified to:
-        // expect(max(2,1).toBe(2));
+        // expect(max(2,1)).toBe(2);
 
+    });
+
+    // second test case
+    it("should return the second argument if it is greater", () => {
+        expect(max(1,2)).toBe(2);
+    });
+
+    // third test case
+    it("should return the first argument if arguments are equal", () => {
+        expect(max(2,2)).toBe(2);
     })
 });
